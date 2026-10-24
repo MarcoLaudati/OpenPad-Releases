@@ -6,6 +6,8 @@ Colleghi il pad, apri il gioco e ti godi la partita. OpenPad prepara la compatib
 
 Questo è il canale pubblico delle distribuzioni per **Windows x64**. Il repository di sviluppo resta privato; ogni versione distribuita comprende il proprio archivio dei sorgenti GPL-3.0, con istruzioni di compilazione, licenze e dipendenze native documentate.
 
+**Nota per questa prima anteprima:** il feed firmato viene verificato, ma il download integrato ha un problema di compatibilita con il confronto degli hash del framework. La correzione sara distribuita con il nuovo installer. I controller e i dati locali restano utilizzabili.
+
 ## Scarica la 0.7.1 · Anteprima
 
 - [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
