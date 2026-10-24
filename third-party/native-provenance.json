@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "fetchedAtUtc": "2026-10-24T14:38:35.5220971Z",
+  "platform": "win-x64",
+  "installedDrivers": false,
+  "libraries": [
+    {
+      "name": "hidapi",
+      "version": "hidapi-0.15.0",
+      "releaseUrl": "https://github.com/libusb/hidapi/releases/tag/hidapi-0.15.0",
+      "archiveUrl": "https://github.com/libusb/hidapi/releases/download/hidapi-0.15.0/hidapi-win.zip",
+      "archive": "artifacts/downloads/hidapi-win-0.15.0.zip",
+      "archiveSha256": "d18c43ec9506a2f6d7faa9c7e0a342c4b64fbae521b71b5d4ac0777fd24dda93",
+      "githubPublishedDigest": null,
+      "azureBlobContentMd5": "NAs16V8+AjogDJRxAG4WWA==",
+      "digestVerification": "No GitHub release digest published. Azure Blob Content-MD5 verified; local SHA256 recorded.",
+      "binary": "source/DualSenseClient.Hid/native/win-x64/hidapi.dll",
+      "binarySha256": "d4c05ba2138cb5259a7f796464b5eaa63b9f8f67bb5cb003f96989244ee01583",
+      "licenseSource": "https://github.com/libusb/hidapi/tree/hidapi-0.15.0",
+      "licenseFiles": [
+        "HIDAPI-LICENSE.txt",
+        "HIDAPI-LICENSE-bsd.txt",
+        "HIDAPI-LICENSE-gpl3.txt",
+        "HIDAPI-LICENSE-orig.txt"
+      ]
+    },
+    {
+      "name": "libVIIPER",
+      "version": "v1.0.1",
+      "releaseUrl": "https://github.com/DualSenseClient/VIIPER/releases/tag/v1.0.1",
+      "archiveUrl": "https://github.com/DualSenseClient/VIIPER/releases/download/v1.0.1/libVIIPER-windows-amd64.zip",
+      "archive": "artifacts/downloads/libVIIPER-windows-amd64-v1.0.1.zip",
+      "archiveSha256": "ac1281fea5663e20b554df0d2abf0868b2223ce664465a4b02cf74b3f1c470a9",
+      "githubPublishedDigest": "sha256:ac1281fea5663e20b554df0d2abf0868b2223ce664465a4b02cf74b3f1c470a9",
+      "digestVerification": "Archive SHA256 matches GitHub release asset digest.",
+      "binary": "source/DualSenseClient.VIIPER/native/win-x64/libVIIPER.dll",
+      "binarySha256": "87bf15d6b25f7a4b082c8303448a26b046cb13a281c5f9ad830d6ee5be1cc47b",
+      "licenseSource": "https://github.com/DualSenseClient/VIIPER/tree/v1.0.1",
+      "licenseFiles": [
+        "VIIPER-LICENSE.txt",
+        "VIIPER-third-party-licenses.txt"
+      ]
+    }
+  ],
+  "licensesDirectory": "artifacts/downloads/licenses",
+  "licenseSha256": [
+    {
+      "file": "HIDAPI-LICENSE-bsd.txt",
+      "sha256": "7df027eb1a994332c0671d4f957ef2c195bd93c2a735ee9202d2cf62769c22a6"
+    },
+    {
+      "file": "HIDAPI-LICENSE-gpl3.txt",
+      "sha256": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227"
+    },
+    {
+      "file": "HIDAPI-LICENSE-orig.txt",
+      "sha256": "241e40b1b713bfb08469e395c36047a78ce8818f22ba041205c471c8468c190a"
+    },
+    {
+      "file": "HIDAPI-LICENSE.txt",
+      "sha256": "423b6e3126c0f5c5d5e23e700698d77632521d8959b9b12f81a30272f9d6280f"
+    },
+    {
+      "file": "VIIPER-LICENSE.txt",
+      "sha256": "22f65f0ba65b3fb08b8f2b681d5cefa436690fe67747fa9ad4674c75695643a4"
+    },
+    {
+      "file": "VIIPER-third-party-licenses.txt",
+      "sha256": "f43a9cbb7174018c7ae26fe646f472a2c30ba1a6597a8d18fdc66d66b805a111"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+> **Archivio upstream — DualSense Client.** Questa pagina conserva la guida dell'interfaccia originale e può descrivere funzioni e schermate che OpenPad non espone. Per usare l'app attuale segui il [manuale funzionale OpenPad](../functional.md).
+>
+> Portale OpenPad: **Powered By RagazzoInGamba - Marco Laudati**. Il contenuto storico e le attribuzioni originali sono conservati; i [crediti del progetto](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/CREDITS.md) distinguono OpenPad e componenti upstream.
+
+# Controller Hiding
+
+When you use [virtual controller emulation](virtual-controller.md), games may see **two** controllers — the real one and the emulated one — causing double inputs in menus and gameplay. Controller Hiding solves this by making the physical controller invisible to other applications while DualSense Client keeps full access to it.
+
+## Requirements
+
+- **Windows only** — requires the [HidHide](https://github.com/nefarius/HidHide) driver
+- Download and install HidHide once; no extra configuration needed in its own UI
+
+## How It Works
+
+- Each controller has its own **Hide this controller** toggle on the **Device Info** page (Windows only)
+- When hidden, games and other applications no longer receive input from the physical controller
+- The app **whitelists itself** automatically, so monitoring, lighting, profiles, and everything else keep working against the hidden controller
+
+![Hide this controller row on the Device Info page](../assets/images/controller-hiding.png)
+
+## Typical Setup for Games
+
+1. Install [HidHide](https://github.com/nefarius/HidHide) (once)
+2. Enable [virtual controller emulation](virtual-controller.md) with your preferred controller type
+3. Enable the hide toggle for the physical controller on its **Device Info** page
+4. Launch your game — it now sees only the virtual controller, with rumble and trigger feedback still reaching your hands
+
+!!! tip
+    If a game misbehaves after hiding (for example it cannot see the controller at all), toggle the hide switch off again first — then check that the game is reading the virtual device rather than the physical one.
+
+!!! tip
+    Hiding can be automated per program with an [auto profile rule](auto-profiles.md#creating-a-rule) — for example, hide the physical controller only while your game is focused and show it again on the desktop. The rule's hiding option appears once HidHide is installed.

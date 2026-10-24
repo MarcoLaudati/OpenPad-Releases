@@ -1,0 +1,5 @@
+# Powered By RagazzoInGamba - Marco Laudati
+# Preserve upstream notices byte-for-byte: their SHA256 values are pinned across Windows and Linux.
+third-party/managed-licenses/** -text -whitespace
+third-party/native-licenses/** -text -whitespace
+third-party/driver-licenses/** -text -whitespace

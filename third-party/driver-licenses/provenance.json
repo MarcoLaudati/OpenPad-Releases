@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUtc": "2026-10-24T17:48:19.2321203Z",
+  "installerExecuted": false,
+  "driverInstalled": false,
+  "packages": [
+    {
+      "component": "HidHide",
+      "version": "1.5.230.0",
+      "releaseUrl": "https://github.com/nefarius/HidHide/releases/tag/v1.5.230.0",
+      "installerUrl": "https://github.com/nefarius/HidHide/releases/download/v1.5.230.0/HidHide_1.5.230_x64.exe",
+      "license": "MIT",
+      "licenseFile": "HidHide-LICENSE.txt",
+      "licenseSourceUrl": "https://raw.githubusercontent.com/nefarius/HidHide/v1.5.230.0/LICENSE",
+      "licenseSha256": "01EB672FC71923D09BC0472C454A6E9ED582CD13D5EF7303BDAE96A44E051E6C",
+      "installerSha256": "F4BBBCB82E6258641B887C74BC81C4C5F66E4AA811808DFC304347687B7605F6",
+      "githubPublishedDigest": null,
+      "authenticodeStatus": "Valid",
+      "signerSubject": "CN=Nefarius Software Solutions e.U., O=Nefarius Software Solutions e.U., L=Wels, C=AT, SERIALNUMBER=505039f, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.1=Wels, OID.1.3.6.1.4.1.311.60.2.1.2=Oberösterreich, OID.1.3.6.1.4.1.311.60.2.1.3=AT",
+      "signerLeafThumbprintSha1": "1F431092EC96A80B41AB5317F53AC02EA6F9B89B",
+      "signerCertificateSha256": "E84E8537968CDC234E17A232BD813E3EA4E5B7826A8062F5CB033047E1CE3DA0",
+      "timestampSubject": "CN=DigiCert Timestamp 2023, O=\"DigiCert, Inc.\", C=US",
+      "driverCatalogVerification": {
+        "inspected": false,
+        "reason": "Signed Advanced Installer SFX was not executed or extracted. Outer Authenticode signature verified; internal catalog identity not independently inspected."
+      },
+      "silentArguments": "/exenoui /qn /norestart REBOOT=ReallySuppress",
+      "silentArgumentsSource": "https://docs.advancedinstaller.com/exe-setup-file.html",
+      "prerequisites": {
+        "vcRuntimeX64Minimum": "14.30",
+        "source": "https://github.com/nefarius/HidHide/blob/v1.5.230.0/Setup/HidHide.aip",
+        "offlineGuarantee": false,
+        "note": "The official EXE may download the Microsoft Visual C++ prerequisite if it is absent."
+      }
+    },
+    {
+      "component": "USB/IP for Windows",
+      "version": "0.9.8.1",
+      "tag": "v.0.9.8.1",
+      "releaseCommit": "55e1fa7f0c2157017b02dc1f3236e98169a535e4",
+      "releaseUrl": "https://github.com/vadimgrn/usbip-win2/releases/tag/v.0.9.8.1",
+      "installerUrl": "https://github.com/vadimgrn/usbip-win2/releases/download/v.0.9.8.1/USBip-0.9.8.1-x64.exe",
+      "license": "BSD-2-Clause",
+      "licenseFile": "USBip-LICENSE.txt",
+      "licenseSourceUrl": "https://raw.githubusercontent.com/vadimgrn/usbip-win2/v.0.9.8.1/LICENSE.txt",
+      "licenseSha256": "723572B1487231EDCC3A2594DA30961C693DA7A0D7B676CA718FE3391920B8CA",
+      "files": [
+        {
+          "File": "USBip-0.9.8.1-x64.exe",
+          "SHA256": "38CAD6D4432B52D5BB9409D9AD03B72FDFFC4ADA4CD3A48FBECA1A2752A8518A",
+          "AuthenticodeStatus": "Valid",
+          "SignerSubject": "E=itsec@scheibling.se, CN=Cloudyne Systems (Scheibling Consulting AB), O=Cloudyne Systems (Scheibling Consulting AB), STREET=Fyrislundsgatan 29 a, L=Uppsala, S=Uppsala, C=SE, OID.1.3.6.1.4.1.311.60.2.1.3=SE, SERIALNUMBER=559171-6567, OID.2.5.4.15=Private Organization",
+          "SignerThumbprintSHA1": "9AC56B6C76141395D74FFF6652818376E80B9C95",
+          "SignerCertificateSHA256": "643C5C7521EE9F2D4F5B7108013E27425AF0F9405CD3FFD9FFCA9187DB6A7687",
+          "TimestampSubject": "CN=Microsoft Public RSA Time Stamping Authority, OU=nShield TSS ESN:7A1A-05E0-D947, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        },
+        {
+          "File": "usbip2_filter.cat",
+          "SHA256": "F259D60BDB5AD9D7A976418BFC9156B788DFCEC9B67C8D05D036EB03FB18FFE1",
+          "AuthenticodeStatus": "Valid",
+          "SignerSubject": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+          "SignerThumbprintSHA1": "32B4E7CE92A59C722B8BDF7AE3E66520CFB9DE21",
+          "SignerCertificateSHA256": "2E8072DED075C6B6C0DF8C364E9D12319577114991F2455EBC4B364B367F7DBA",
+          "TimestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:551A-05E0-D947, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        },
+        {
+          "File": "usbip2_filter.inf",
+          "SHA256": "B7FE01B04793D2F83CF3407601F2C835F1A10C2618E32A52C8FDEF1DA6B79BFF",
+          "AuthenticodeStatus": "UnknownError",
+          "SignerSubject": null,
+          "SignerThumbprintSHA1": null,
+          "SignerCertificateSHA256": null,
+          "TimestampSubject": null
+        },
+        {
+          "File": "usbip2_filter.sys",
+          "SHA256": "B93A5FC3C23D56F9B49634742374E32F269E53F764CAA2D5FCB43E3259F7ECED",
+          "AuthenticodeStatus": "Valid",
+          "SignerSubject": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+          "SignerThumbprintSHA1": "32B4E7CE92A59C722B8BDF7AE3E66520CFB9DE21",
+          "SignerCertificateSHA256": "2E8072DED075C6B6C0DF8C364E9D12319577114991F2455EBC4B364B367F7DBA",
+          "TimestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:401A-05E0-D947, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        },
+        {
+          "File": "usbip2_ude.cat",
+          "SHA256": "84DD6CC5985857ADF1514A9EE202210FF3EE1384C9BE40FD49D6810E23E25F3A",
+          "AuthenticodeStatus": "Valid",
+          "SignerSubject": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+          "SignerThumbprintSHA1": "32B4E7CE92A59C722B8BDF7AE3E66520CFB9DE21",
+          "SignerCertificateSHA256": "2E8072DED075C6B6C0DF8C364E9D12319577114991F2455EBC4B364B367F7DBA",
+          "TimestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:431A-05E0-D947, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        },
+        {
+          "File": "usbip2_ude.inf",
+          "SHA256": "1AE9E8DC497929DE1A6BE1291AE1DCA6A19E7FD6C0351E8C266F65DD91F15073",
+          "AuthenticodeStatus": "UnknownError",
+          "SignerSubject": null,
+          "SignerThumbprintSHA1": null,
+          "SignerCertificateSHA256": null,
+          "TimestampSubject": null
+        },
+        {
+          "File": "usbip2_ude.sys",
+          "SHA256": "ABD4FC43DCE40E027E4ACC884CBFE92433E026206F6565C5EE5284A39441169A",
+          "AuthenticodeStatus": "Valid",
+          "SignerSubject": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+          "SignerThumbprintSHA1": "32B4E7CE92A59C722B8BDF7AE3E66520CFB9DE21",
+          "SignerCertificateSHA256": "2E8072DED075C6B6C0DF8C364E9D12319577114991F2455EBC4B364B367F7DBA",
+          "TimestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:4C1A-05E0-D947, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        }
+      ],
+      "sourceVerification": "artifacts/driver-research/usbip-0.9.8.1-x64-verification.json"
+    }
+  ],
+  "notes": [
+    "Asset SHA256 values are locally computed pins; an official GitHub asset digest is not claimed where none is published.",
+    "Authenticode was validated read-only using Windows trust policy, including timestamp validation.",
+    "Bundling a signed installer does not establish that it is installed or operational."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "credit": "Powered By RagazzoInGamba - Marco Laudati",
+  "sources": [
+    {
+      "name": "libVIIPER", "version": "v1.0.1",
+      "commit": "25515e1ef405f189b73d5e2707a4fbb0798e9110",
+      "fileName": "VIIPER-1.0.1-source.zip",
+      "url": "https://codeload.github.com/DualSenseClient/VIIPER/zip/refs/tags/v1.0.1",
+      "sha256": "21799c168cae3fb0f6dd0cd65ad086bb405ebe6719e8946b88d2f9cf87959016",
+      "note": "The SDL submodule under _testing/e2e is optional test tooling, not a library build dependency. Go module versions and build instructions are included in the snapshot."
+    },
+    {
+      "name": "HIDAPI", "version": "hidapi-0.15.0",
+      "commit": "d6b2a974608dec3b76fb1e36c189f22b9cf3650c",
+      "fileName": "HIDAPI-0.15.0-source.zip",
+      "url": "https://codeload.github.com/libusb/hidapi/zip/refs/tags/hidapi-0.15.0",
+      "sha256": "dea0c29849e7cac86a4561bf36ba0d97a755a16dc99b9e75714f4af7ea2af2f1"
+    }
+  ]
+}
