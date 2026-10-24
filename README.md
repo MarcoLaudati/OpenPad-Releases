@@ -6,12 +6,12 @@ Colleghi il pad, apri il gioco e ti godi la partita. OpenPad prepara la compatib
 
 Questo è il canale pubblico delle distribuzioni per **Windows x64**. Il repository di sviluppo resta privato; ogni versione distribuita comprende il proprio archivio dei sorgenti GPL-3.0, con istruzioni di compilazione, licenze e dipendenze native documentate.
 
-## Scarica la 0.7.0 · Anteprima
+## Scarica la 0.7.1 · Anteprima
 
-- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.0/OpenPad-0.7.0-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
-- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.0/OpenPad-0.7.0-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
-- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.0/OpenPad-0.7.0-source.zip).
-- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.0).
+- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
+- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
+- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-source.zip).
+- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.1).
 
 1. Installa e apri OpenPad.
 2. Se manca un componente, premi **Configura OpenPad** e conferma Windows. Un eventuale riavvio lo scegli tu.

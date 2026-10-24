@@ -62,7 +62,7 @@ Il riepilogo distingue le funzioni documentate dalle prove ancora necessarie. Pe
 
 ## Aggiornare il catalogo
 
-La fonte incorporata è [GameCompatibilityCatalog.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.0/OpenPad-0.7.0-source.zip). Lo schema resta alla versione 1: `DocumentedUsbFeatures` e `DocumentedBluetoothFeatures` sono opzionali e indipendenti. Le chiavi ammesse sono `HapticFeedback`, `AdaptiveTriggers`, `ControllerSpeaker` e `Vibration`. Una lista assente non promette singole funzioni avanzate; una lista presente richiede il supporto documentato dello stesso collegamento.
+La fonte incorporata è [GameCompatibilityCatalog.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-source.zip). Lo schema resta alla versione 1: `DocumentedUsbFeatures` e `DocumentedBluetoothFeatures` sono opzionali e indipendenti. Le chiavi ammesse sono `HapticFeedback`, `AdaptiveTriggers`, `ControllerSpeaker` e `Vibration`. Una lista assente non promette singole funzioni avanzate; una lista presente richiede il supporto documentato dello stesso collegamento.
 
 L'engine espone `GetGameCapabilitySummary(InstalledGame)` per la libreria senza un pad collegato e `GetCapabilitySummary(PadSnapshot, InstalledGame, PadMode)` per il riepilogo del percorso scelto. I metodi usano famiglia del pad, collegamento, identità del gioco e modalità. Non misurano effetti fisici e non modificano impostazioni.
 

@@ -4,6 +4,12 @@
 
 Baseline hardware iniziale: OpenPad 0.4.2, 24 ottobre 2026. Le verifiche successive sono separate per versione. Questo è il riepilogo pubblico delle prove, non una certificazione per qualsiasi pad, gioco o PC. I report originali restano locali perché possono contenere percorsi, identificativi dei dispositivi e dati della macchina.
 
+## Inquadratura e rilascio 0.7.1
+
+La verifica visiva della panoramica ha rilevato che i margini negativi tagliavano il nuovo render nella scheda. La 0.7.1 usa margini interni positivi, con controller completo e stati live separati. Smoke della panoramica, libreria, Controller e Impostazioni ripetuto sulla 0.7.1; il render è stato ispezionato nella finestra reale.
+
+La 0.7.0 è stata installata sul PC come baseline per l'aggiornamento reale verso la release pubblica. Il suo installer finale ha inoltre rifiutato la reinstallazione mentre l'app portatile era aperta, preservando processo e installazione. Le prove degli endpoint e del gioco qui sotto si riferiscono al motore condiviso con la 0.7.1.
+
 ## Avanzate, installer e aggiornamenti 0.7.0
 
 - **489 test OpenPad, 769 test backend e 48 test Updates superati: 1.306 in totale.** Due casi Linux restano esclusi su Windows. I test comprendono profili disabilitati all'importazione, mapping e combinazioni, precedenza delle preferenze, ownership/cancellazione delle anteprime, varianti e feedback tipizzati.
