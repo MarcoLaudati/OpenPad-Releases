@@ -4,6 +4,16 @@
 
 Baseline hardware iniziale: OpenPad 0.4.2, 24 ottobre 2026. Le verifiche successive sono separate per versione. Questo è il riepilogo pubblico delle prove, non una certificazione per qualsiasi pad, gioco o PC. I report originali restano locali perché possono contenere percorsi, identificativi dei dispositivi e dati della macchina.
 
+## Adattatore aggiornamenti 0.7.2
+
+La prova pubblica con il client originale ha riprodotto `ChecksumFailedException`: Velopack 1.2.161 calcola il testo SHA-256 maiuscolo e lo confronta con distinzione di maiuscole. Il manifest e la nostra verifica indicavano lo stesso hash minuscolo. Il successivo messaggio di estrazione mascherava l'errore iniziale.
+
+Un secondo probe, sullo stesso pacchetto GitHub reale e in un locator isolato, ha normalizzato solo il valore dell'adattatore SDK: download completo, promozione del pacchetto, pending update e verifica firmata sono riusciti. La patch mantiene invariati RSA, hash del manifest e policy del pacchetto.
+
+La suite Updates comprende ora **66 test**, inclusi due percorsi reali UpdateManager con HTTP controllato: il formato precedente fallisce senza pending update; quello corretto scarica, prepara e riverifica. Sedici test aggiuntivi verificano che la diagnostica locale escluda messaggi grezzi, stack, URL, percorsi e token. Con i 489 OpenPad e 769 backend, il totale è **1.324 test superati**, più i due casi Linux esclusi su Windows.
+
+Le prime versioni con l'adattatore precedente richiedono un installer corretto prima di poter aggiornare automaticamente; non vengono modificate a caldo. La 0.7.2 è usata come baseline locale per la verifica del canale pubblico.
+
 ## Inquadratura e rilascio 0.7.1
 
 La verifica visiva della panoramica ha rilevato che i margini negativi tagliavano il nuovo render nella scheda. La 0.7.1 usa margini interni positivi, con controller completo e stati live separati. Smoke della panoramica, libreria, Controller e Impostazioni ripetuto sulla 0.7.1; il render è stato ispezionato nella finestra reale.

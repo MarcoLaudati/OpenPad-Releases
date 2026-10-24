@@ -6,14 +6,14 @@ Colleghi il pad, apri il gioco e ti godi la partita. OpenPad prepara la compatib
 
 Questo è il canale pubblico delle distribuzioni per **Windows x64**. Il repository di sviluppo resta privato; ogni versione distribuita comprende il proprio archivio dei sorgenti GPL-3.0, con istruzioni di compilazione, licenze e dipendenze native documentate.
 
-**Nota per questa prima anteprima:** il feed firmato viene verificato, ma il download integrato ha un problema di compatibilita con il confronto degli hash del framework. La correzione sara distribuita con il nuovo installer. I controller e i dati locali restano utilizzabili.
+Se usavi 0.7.0/0.7.1, esegui il nuovo installer una volta per correggere il vecchio adattatore checksum. I dati personali restano separati.
 
-## Scarica la 0.7.1 · Anteprima
+## Scarica la 0.7.3 · Anteprima
 
-- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
-- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
-- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-source.zip).
-- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.1).
+- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
+- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
+- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-source.zip).
+- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.3).
 
 1. Installa e apri OpenPad.
 2. Se manca un componente, premi **Configura OpenPad** e conferma Windows. Un eventuale riavvio lo scegli tu.

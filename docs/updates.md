@@ -20,6 +20,8 @@ Un aggiornamento verificato viene applicato alla chiusura quando non risultano p
 
 Le richieste di aggiornamento contattano GitHub per feed e pacchetti. Non inviano la libreria dei giochi o i profili dei controller. Senza Internet puoi continuare a giocare con la versione presente.
 
+Se una verifica fallisce, `updates/failure-latest.json` nella cartella dati conserva soltanto ora UTC, fase, tipo, codice e motivo previsto. Non contiene messaggi grezzi, stack, URL o token. Le prime anteprime 0.7.0/0.7.1 hanno un errore dell'adattatore checksum: per passare alla versione corretta occorre eseguire il nuovo installer una volta.
+
 ## Due firme diverse
 
 Gli aggiornamenti sono verificati con una chiave pubblica incorporata in OpenPad. Il feed firmato RSA-PSS descrive versione, architettura e pacchetto; il download viene verificato prima dell'applicazione. La chiave privata di pubblicazione rimane fuori dal repository e dagli archivi distribuiti.

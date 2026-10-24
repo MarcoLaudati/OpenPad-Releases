@@ -1,10 +1,10 @@
 {
-  "version": "0.7.1",
+  "version": "0.7.3",
   "channel": "win-x64-preview",
   "credit": "Powered By RagazzoInGamba - Marco Laudati",
-  "sourceCommit": "5ff5cee032299e1e7b111d5bdadbde7ab5a4238f",
-  "sourceArchive": "OpenPad-0.7.1-source.zip",
-  "sourceSha256": "938cad61da304f5ea0e44329805570916d195b8033a548080c51cfa7ff01406e",
+  "sourceCommit": "44a7ba1ee839e373d30ae399177beba52ef67eb4",
+  "sourceArchive": "OpenPad-0.7.3-source.zip",
+  "sourceSha256": "529dc48e56e09841197550f0236426d220016d9b864a0509d59792edb4dc75f1",
   "windowsPublisher": "NotSigned",
   "license": "GPL-3.0"
 }

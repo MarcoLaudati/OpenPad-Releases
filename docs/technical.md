@@ -85,7 +85,7 @@ Il manifest incorporato fissa URL, versione, SHA256, certificati ammessi e argom
 | USB/IP 0.9.8.1 x64 | Driver UDE e filtro USB per libVIIPER | `38CAD6D4432B52D5BB9409D9AD03B72FDFFC4ADA4CD3A48FBECA1A2752A8518A` |
 | HidHide 1.5.230.0 x64 | Filtro di visibilità dei controller | `F4BBBCB82E6258641B887C74BC81C4C5F66E4AA811808DFC304347687B7605F6` |
 
-I pin e i certificati sono in [DriverPackages.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.1/OpenPad-0.7.1-source.zip); provenienza e licenze sono in `third-party`. La versione USB/IP corrisponde al requisito del [README libVIIPER v1.0.1](https://github.com/DualSenseClient/VIIPER/blob/v1.0.1/README.md).
+I pin e i certificati sono in [DriverPackages.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-source.zip); provenienza e licenze sono in `third-party`. La versione USB/IP corrisponde al requisito del [README libVIIPER v1.0.1](https://github.com/DualSenseClient/VIIPER/blob/v1.0.1/README.md).
 
 Il flusso ricontrolla giochi aperti e stato Windows; verifica SHA256, Authenticode/WinVerifyTrust e certificato ammesso; quindi richiede UAC per il solo helper. Lock di lettura impediscono di sostituire i file durante la verifica. L'helper verifica nuovamente e prepara i pacchetti in directory amministrative protette, nuove e non prevedibili, rifiutando percorsi con reparse point.
 
