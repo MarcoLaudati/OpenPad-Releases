@@ -4,6 +4,16 @@
 
 Baseline hardware iniziale: OpenPad 0.4.2, 24 ottobre 2026. Le verifiche successive sono separate per versione. Questo è il riepilogo pubblico delle prove, non una certificazione per qualsiasi pad, gioco o PC. I report originali restano locali perché possono contenere percorsi, identificativi dei dispositivi e dati della macchina.
 
+## Aggiornamento pubblico reale 0.7.2 → 0.7.3
+
+**Prova completata sul programma installato**, senza usare il pulsante di controllo manuale o quello di applicazione: il controllo automatico all'avvio ha letto il feed GitHub pubblico firmato, scaricato la 0.7.3 e dichiarato il pacchetto verificato e pronto. La normale X ha chiuso ordinatamente l'app; l'aggiornamento è stato applicato e il successivo avvio ha caricato `0.7.3+44a7ba1ee839e373d30ae399177beba52ef67eb4`.
+
+I quattro file monitorati di preferenze, giochi, setup e opzioni avanzate sono rimasti identici nei loro SHA256, anche dopo l'installazione della baseline corretta. Nessun processo è stato terminato forzatamente, nessun installer driver è stato eseguito e Windows non è stato riavviato. I sette asset pubblici sono stati confrontati con i digest SHA256 calcolati da GitHub.
+
+Ripetuti smoke e ispezione dell'interfaccia **installata**: panoramica, libreria, Controller, Impostazioni e cinque sezioni Avanzate; default avanzato disabilitato e credito presente. Il render completo è visibile nella schermata reale. La CI del codice `44a7ba1` è riuscita per build, test, installer, audit dei pacchetti e documentazione rigorosa.
+
+USB/IP e HidHide risultano installati e operativi sul PC; la richiesta di riavvio finale dell'installer resta registrata fino a un vero riavvio Windows. Questa richiesta non viene cancellata dall'aggiornamento dell'app o dal successo della prova corrente.
+
 ## Adattatore aggiornamenti 0.7.2
 
 La prova pubblica con il client originale ha riprodotto `ChecksumFailedException`: Velopack 1.2.161 calcola il testo SHA-256 maiuscolo e lo confronta con distinzione di maiuscole. Il manifest e la nostra verifica indicavano lo stesso hash minuscolo. Il successivo messaggio di estrazione mascherava l'errore iniziale.

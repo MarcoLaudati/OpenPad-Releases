@@ -1,0 +1,15 @@
+{
+  "credit": "Powered By RagazzoInGamba - Marco Laudati",
+  "fromVersion": "0.7.2",
+  "toVersion": "0.7.3",
+  "sourceCommit": "44a7ba1ee839e373d30ae399177beba52ef67eb4",
+  "automaticStartupCheck": true,
+  "automaticApplyOnOrdinaryClose": true,
+  "signedPublicGitHubFeed": true,
+  "dataFilesVerified": 4,
+  "dataPreserved": true,
+  "testsPassed": 1324,
+  "physicalController": "DualSense USB",
+  "windowsPublisher": "NotSigned",
+  "driverInstallerRestartStillPending": true
+}
