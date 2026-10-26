@@ -1,3 +1,17 @@
+# OpenPad 0.7.4 — La mira e gli avvisi, al posto giusto
+
+**Powered By RagazzoInGamba - Marco Laudati**
+
+Call of Duty HQ e Modern Warfare (2019) hanno indicazioni dedicate per selezionare il controller nel gioco e mantenere i layout originali. Il suggerimento viene mostrato nelle informazioni del titolo e resta disponibile anche con compatibilità Xbox standard. Non modifica file, binding o preferenze di Call of Duty e non attribuisce al gioco effetti DualSense non verificati.
+
+Corretto un problema distinto: il messaggio di un errore del motore poteva rimanere nella UI dopo la sua risoluzione. Il recupero ora rimuove il proprio avviso senza cancellare un messaggio successivo dell'app; la chiusura manuale dell'avviso continua a essere rispettata finché quell'errore non si risolve.
+
+La diagnosi sul DualSense USB ha rilevato entrambi gli stick nello slot XInput usato per la prova. Il file locale di Call of Duty indicava inizialmente mira Mouse; successivamente il gioco ha registrato Controller, senza nostre modifiche ai file. La risposta effettiva della visuale attende ancora conferma dell'utente. Dettagli e limiti in [VERIFICATION.md](VERIFICATION.md).
+
+**1.341 test superati** nell'esecuzione corrente: 507 OpenPad, 768 backend e 66 Updates. Il collaudo del gioco e quello dell'aggiornamento della nuova versione rimangono verifiche separate.
+
+---
+
 # OpenPad 0.7.3 — Anteprima con adattatore corretto
 
 **Powered By RagazzoInGamba - Marco Laudati**
@@ -66,7 +80,7 @@ La modifica riguarda i canali luce. Comandi, zone morte, vibrazione, grilletti, 
 
 **424 test OpenPad e 762 test backend superati**, 2 casi Linux ignorati. Build senza errori o avvisi, controllo dei report USB/Bluetooth e prova fisica dello scanner USB completati. Bluetooth ed Edge richiedono ancora prove dedicate.
 
-Scarica **OpenPad-0.6.0-win-x64.zip**, estrai tutto e apri `OpenPad.exe`. Sono disponibili anche **OpenPad-0.6.0-source.zip** e **SHA256SUMS.txt**. La [guida alle luci](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/lighting.md) spiega i preset; [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md) conserva prove e limiti.
+Scarica **OpenPad-0.6.0-win-x64.zip**, estrai tutto e apri `OpenPad.exe`. Sono disponibili anche **OpenPad-0.6.0-source.zip** e **SHA256SUMS.txt**. La [guida alle luci](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/lighting.md) spiega i preset; [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md) conserva prove e limiti.
 
 **Powered By RagazzoInGamba - Marco Laudati**
 
@@ -112,7 +126,7 @@ Scarica **OpenPad-0.5.0-win-x64.zip**, estrai tutta la cartella e apri `OpenPad.
 
 Build senza errori o avvisi, **384 test OpenPad + 744 test del backend superati**, 2 casi Linux ignorati. Verifica dell'interfaccia e ispezione degli screenshot completate. Bluetooth fisico, multipad e collaudo dopo il riavvio driver restano prove separate: implementato, documentato e provato sul PC sono esiti distinti.
 
-Parti dalla [guida funzionale](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/functional.md), dal [catalogo con le fonti](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/game-compatibility.md) o dalla [documentazione tecnica](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/technical.md). Il registro completo è in [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md).
+Parti dalla [guida funzionale](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/functional.md), dal [catalogo con le fonti](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/game-compatibility.md) o dalla [documentazione tecnica](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/technical.md). Il registro completo è in [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md).
 
 **Powered By RagazzoInGamba - Marco Laudati**
 
@@ -149,8 +163,8 @@ DualSense USB nativo e compatibilità Xbox tramite il fallback ViGEm sono stati 
 
 Bluetooth fisico, altri modelli e funzioni avanzate richiedono ancora prove dedicate. Aptica, grilletti, audio e simboli dipendono dal supporto del gioco: OpenPad non può aggiungere effetti che il titolo non implementa.
 
-Le prove e i limiti aggiornati sono in [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md). Per partire: [README](https://github.com/MarcoLaudati/OpenPad#readme), [guida funzionale](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/functional.md) e [documentazione tecnica](https://github.com/MarcoLaudati/OpenPad/blob/main/docs/technical.md).
+Le prove e i limiti aggiornati sono in [VERIFICATION.md](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md). Per partire: [README](https://github.com/MarcoLaudati/OpenPad-Releases#readme), [guida funzionale](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/functional.md) e [documentazione tecnica](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/docs/technical.md).
 
-OpenPad è GPL-3.0 e riusa il motore di DualSense Client. Autori e licenze originali sono conservati nei [crediti](https://github.com/MarcoLaudati/OpenPad/blob/main/CREDITS.md).
+OpenPad è GPL-3.0 e riusa il motore di DualSense Client. Autori e licenze originali sono conservati nei [crediti](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/CREDITS.md).
 
 **Powered By RagazzoInGamba - Marco Laudati**

@@ -43,6 +43,21 @@ Per ripristinare il comportamento consigliato seleziona **Automatico** per quel 
 
 Il catalogo distingue il supporto documentato da una traduzione standard dei comandi. Una modalità virtuale richiesta ma non effettivamente operativa viene segnalata nel suo stato.
 
+## In Call of Duty cammino, ma la visuale non si muove
+
+Il gioco può gestire separatamente il dispositivo usato per la mira. Un controller visibile e lo stick sinistro funzionante non garantiscono che la visuale sia assegnata allo stick destro.
+
+1. Prima di entrare in partita, apri le impostazioni del titolo e cerca **Dispositivo di input per la mira** o **Aiming Input Device**. Se vuoi mirare dal pad, seleziona **Controller**. Il percorso del menu varia tra i titoli ospitati da Call of Duty HQ.
+2. Se la scelta è bloccata durante la partita, torna alla lobby: la [guida ufficiale di Black Ops 6](https://www.callofduty.com/guides/blackops6/training/call-of-duty-guides-black-ops-6-multiplayer-training-controls) documenta questo vincolo. Per Modern Warfare (2019), controlla il dispositivo di input nelle [opzioni PC](https://blog.activision.com/call-of-duty/2019-10/Getting-Started-in-Modern-Warfare-Controls-and-Settings-PC).
+3. Per ripartire dai comandi originali, verifica che i layout di tasti e stick siano **Predefinito** nel gioco. In OpenPad lascia **Automatico** e le personalizzazioni Avanzate disabilitate, salvo una tua scelta precisa.
+4. Apri **Controller → Prova i tasti** e verifica entrambi gli stick. Il disegno conferma l'input fisico ricevuto da OpenPad; non certifica l'assegnazione della visuale nel gioco. Se il problema resta con Controller selezionato, segnala titolo esatto, launcher e stato della modalità, senza azzerare tutte le preferenze.
+
+Dalla 0.7.4 il promemoria è presente nelle informazioni di Call of Duty HQ e Modern Warfare (2019). OpenPad non riscrive i file di configurazione o le scelte di mira. Queste indicazioni mantengono la compatibilità Xbox standard: non sono una conferma del supporto nativo DualSense o degli effetti avanzati.
+
+## Un vecchio errore rimane nell'avviso anche se il pad si è ripreso
+
+La 0.7.4 corregge un avviso del motore che poteva restare visibile dopo la risoluzione dell'errore. Il recupero rimuove soltanto il messaggio prodotto da quell'errore e conserva eventuali messaggi successivi. Se lo stesso errore si risolve e poi ritorna, il nuovo episodio viene mostrato di nuovo. La correzione della UI non rende operativo un controller che non lo è: controlla sempre lo stato effettivo della modalità.
+
 ## Una pressione salta due voci o produce due azioni
 
 Il gioco potrebbe vedere il pad fisico insieme alla copia virtuale, oppure ricevere un'ulteriore traduzione da Steam Input o da un altro remapper.
@@ -92,4 +107,4 @@ Se stai eseguendo una diagnosi hardware da terminale, chiudi prima l'istanza des
 
 Indica versione di OpenPad, modello del controller, USB/Bluetooth, gioco e launcher, stato mostrato dall'app e passaggi per riprodurre il problema. Specifica se sono presenti Steam Input o altri remapper.
 
-Da **Impostazioni → Apri cartella dati** puoi trovare i dati locali. I report possono contenere percorsi e informazioni dei dispositivi: rimuovi ciò che non vuoi rendere pubblico prima di allegarli a una [issue](https://github.com/MarcoLaudati/OpenPad/issues).
+Da **Impostazioni → Apri cartella dati** puoi trovare i dati locali. I report possono contenere percorsi e informazioni dei dispositivi: rimuovi ciò che non vuoi rendere pubblico prima di allegarli a una [issue](https://github.com/MarcoLaudati/OpenPad-Releases/issues).

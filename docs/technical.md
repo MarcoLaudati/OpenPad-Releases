@@ -50,6 +50,8 @@ L'apertura, il monitoraggio e la chiusura di un DualSense avviato direttamente i
 
 In modalità Xbox, Cross corrisponde ad A, Circle a B, Square a X e Triangle a Y. OpenPad non riscrive i binding del gioco. Il tuning consigliato conserva mapping, zone morte e feedback, senza overclock, polling imposto o cattura audio di sistema come impostazione iniziale.
 
+Gli assi analogici sono indipendenti dalle tabelle di rimappatura dei pulsanti. Il parser DualSense legge lo stick destro nei byte 2 e 3 del payload; ViGEm assegna `RightThumbX/Y`, mentre i percorsi Xbox USB/IP, DualShock 4 e DualSense virtuali compilano i rispettivi `RX/RY`. `PadInputNormalizer` alimenta soltanto la vista e non cambia i report inviati al gioco. Ricevere l'asse nell'endpoint Windows non prova che un titolo lo abbia selezionato come dispositivo di mira.
+
 ## Scelta automatica e stabilità
 
 `AutomaticCompatibilityPolicy` combina controller, collegamento, driver operativi e catalogo incorporato. La decisione contiene modalità, motivo, livello di evidenza ed eventuale driver mancante.
@@ -62,11 +64,15 @@ In modalità Xbox, Cross corrisponde ad A, Circle a B, Square a X e Triangle a Y
 
 Le eccezioni dell'utente per il singolo gioco hanno precedenza sulla preferenza avanzata abilitata e sulla raccomandazione automatica. `ControllerModeSelection` applica questo ordine anche nella preparazione prima del lancio; una preferenza avanzata disattivata non entra nella selezione. Il catalogo contiene fonti e condizioni: non si deducono funzioni avanzate dal nome di un eseguibile. Uno Steam App ID conosciuto è un'identità più forte del titolo; edizioni con lo stesso ID possono richiedere anche un marcatore nel nome installato.
 
+Le regole possono fornire un `SetupHint` senza dichiarare supporto nativo USB o Bluetooth. Dalla 0.7.4 le due regole Call of Duty aggiungono istruzioni sul dispositivo di mira, mantenendo entrambi i flag nativi a `false`: non elevano la compatibilità standard a supporto DualSense verificato. `GetSetupHint` espone il promemoria alla UI; `GetSupportConfidence` distingue queste regole informative da quelle con una fonte per il supporto nativo. La selezione standard include il suggerimento senza introdurre letture o scritture delle configurazioni del gioco.
+
 `GameSessionSelector` dà priorità al gioco riconosciuto in primo piano. Passare al desktop conserva la partita ancora aperta; con più giochi e nessuna scelta univoca la UI chiede di portare in primo piano quello desiderato. L'attesa di avvio dura al massimo 90 secondi e non scavalca un'altra partita effettivamente in primo piano.
 
 Avviando dalla libreria OpenPad, la modalità viene preparata prima del gioco. `ProfileModeReconciler` conserva una baseline per ciascun controller e scarta lavoro superato da nuove preferenze, hotplug o chiusura. Un errore su un pad non impedisce di gestire gli altri. Una modalità già selezionata non viene ricreata a ogni controllo.
 
 Le modifiche passano attraverso gate seriali. Una sessione funzionante conserva il backend. Per nuove sessioni Xbox viene usato ViGEm quando già disponibile, altrimenti USB/IP; DualSense virtuale usa USB/IP.
+
+`EngineMessagePresentation` associa l'avviso desktop all'errore del motore che lo ha prodotto. Con `LastError` vuoto elimina soltanto il proprio messaggio ancora visualizzato, preservando un messaggio successivo. Il dismiss è riferito all'episodio corrente: dopo un recupero, una nuova ricorrenza torna visibile. Questo corregge la presentazione di errori superati senza alterare readiness, isolamento o gestione del controller.
 
 ## Scoperta e avvio dei giochi
 
@@ -85,7 +91,7 @@ Il manifest incorporato fissa URL, versione, SHA256, certificati ammessi e argom
 | USB/IP 0.9.8.1 x64 | Driver UDE e filtro USB per libVIIPER | `38CAD6D4432B52D5BB9409D9AD03B72FDFFC4ADA4CD3A48FBECA1A2752A8518A` |
 | HidHide 1.5.230.0 x64 | Filtro di visibilità dei controller | `F4BBBCB82E6258641B887C74BC81C4C5F66E4AA811808DFC304347687B7605F6` |
 
-I pin e i certificati sono in [DriverPackages.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-source.zip); provenienza e licenze sono in `third-party`. La versione USB/IP corrisponde al requisito del [README libVIIPER v1.0.1](https://github.com/DualSenseClient/VIIPER/blob/v1.0.1/README.md).
+I pin e i certificati sono in [DriverPackages.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-source.zip); provenienza e licenze sono in `third-party`. La versione USB/IP corrisponde al requisito del [README libVIIPER v1.0.1](https://github.com/DualSenseClient/VIIPER/blob/v1.0.1/README.md).
 
 Il flusso ricontrolla giochi aperti e stato Windows; verifica SHA256, Authenticode/WinVerifyTrust e certificato ammesso; quindi richiede UAC per il solo helper. Lock di lettura impediscono di sostituire i file durante la verifica. L'helper verifica nuovamente e prepara i pacchetti in directory amministrative protette, nuove e non prevedibili, rifiutando percorsi con reparse point.
 

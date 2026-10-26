@@ -8,17 +8,19 @@ Questo è il canale pubblico delle distribuzioni per **Windows x64**. Il reposit
 
 Se usavi 0.7.0/0.7.1, esegui il nuovo installer una volta per correggere il vecchio adattatore checksum. I dati personali restano separati.
 
-## Scarica la 0.7.3 · Anteprima
+## Scarica la 0.7.4 · Anteprima
 
-- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
-- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
-- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-source.zip).
-- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.3).
+- [Installer completo](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-Setup.exe): il percorso consigliato, con runtime e pacchetti ufficiali USB/IP e HidHide inclusi.
+- [Versione portatile](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-win-x64.zip): estrai tutta la cartella e apri OpenPad.exe.
+- [Sorgenti della versione](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-source.zip).
+- [Note, checksum e tutti i pacchetti](https://github.com/MarcoLaudati/OpenPad-Releases/releases/tag/v0.7.4).
 
 1. Installa e apri OpenPad.
 2. Se manca un componente, premi **Configura OpenPad** e conferma Windows. Un eventuale riavvio lo scegli tu.
 3. Collega il pad e lascia attiva **Scelta automatica**.
 4. Avvia un gioco dalla libreria o dal suo launcher.
+
+La 0.7.4 mostra le indicazioni sulla scelta del dispositivo di mira in Call of Duty e rimuove gli avvisi del motore dopo il recupero. Mantiene i comandi originali e lascia le impostazioni del gioco al titolo.
 
 ## Quello che trovi
 

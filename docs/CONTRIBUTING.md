@@ -6,7 +6,7 @@ Se una modifica rende più facile giocare e più chiaro capire cosa succede, sia
 
 ## Da dove partire
 
-Leggi il [manuale funzionale](functional.md), l'[architettura](technical.md) e le [istruzioni di sviluppo](development.md). Apri una [issue](https://github.com/MarcoLaudati/OpenPad/issues) per descrivere un problema o una proposta. Per una correzione piccola e verificabile puoi arrivare direttamente con una pull request.
+Leggi il [manuale funzionale](functional.md), l'[architettura](technical.md) e le [istruzioni di sviluppo](development.md). Apri una [issue](https://github.com/MarcoLaudati/OpenPad-Releases/issues) per descrivere un problema o una proposta. Per una correzione piccola e verificabile puoi arrivare direttamente con una pull request.
 
 Il progetto principale è `OpenPad.slnx`. Il frontend è `OpenPad.Desktop`, il coordinamento hardware è in `OpenPad.Engine`; i progetti `DualSenseClient.*` conservano la base upstream. Le guide della GUI originale non sono un elenco di funzionalità già presenti in OpenPad.
 

@@ -1,0 +1,25 @@
+{
+  "Credit": "Powered By RagazzoInGamba - Marco Laudati",
+  "ObservedAtUtc": "2026-10-26T18:44:29.9576877+01:00",
+  "AppBaseline": "0.7.3",
+  "GameIdentity": "Steam 1938090 / Call of Duty HQ",
+  "PhysicalController": "DualSense USB",
+  "AutomaticMode": "Xbox360",
+  "XInput": {
+    "ConnectedSlots": 1,
+    "Samples": 252,
+    "DistinctPackets": 229,
+    "MaxLeftAxis": 32767,
+    "MaxRightAxis": 32512
+  },
+  "GameAimingInitially": "Mouse",
+  "GameAimingLaterObserved": "Controller",
+  "GameSettingsModifiedByCodex": false,
+  "OwnedIsolationRulesLaterObserved": 1,
+  "UserConfirmedCameraMovement": false,
+  "ReleaseVersion": "0.7.4",
+  "SourceCommit": "736b07315ef77b4683f9c81b26e40848a52e5a57",
+  "TestsPassed": 1341,
+  "InstalledUpdateVerified": false,
+  "SignedFeedAndPackagesVerified": true
+}

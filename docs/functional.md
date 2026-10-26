@@ -4,7 +4,7 @@
 
 OpenPad deve togliere passaggi tra te e la partita. Questa guida descrive cosa fa l'app attuale, come interpreta gli stati e dove puoi intervenire quando serve.
 
-La versione **0.5.0** aggiunge preparazione prima dell'avvio, input visivi, navigazione dal pad e verifica guidata. Le funzioni documentate del gioco, i dati ricevuti dal controller e gli effetti confermati da te rimangono informazioni distinte.
+L'app comprende preparazione prima dell'avvio, input visivi, navigazione dal pad, verifica guidata e opzioni **Avanzate** separate e spente di default. La **0.7.4** aggiunge indicazioni sulle impostazioni di mira di Call of Duty e corregge gli avvisi del motore rimasti visibili dopo il recupero. Le funzioni documentate del gioco, i dati ricevuti dal controller e gli effetti confermati da te rimangono informazioni distinte.
 
 ## Prima configurazione
 
@@ -48,6 +48,10 @@ La panoramica riunisce il pad principale, il gioco riconosciuto o suggerito e i 
 Se la finestra del gioco non può essere riportata in primo piano, l'app lo indica: puoi selezionarla dalla barra delle applicazioni Windows.
 
 La modalità visualizzata è confrontata con lo stato del backend. Un controller virtuale richiesto ma non effettivamente disponibile viene indicato come **non operativo**. La sola presenza di un oggetto software o del pacchetto driver non viene usata come prova del funzionamento.
+
+Le informazioni del gioco mostrano anche i passaggi che dipendono dal titolo. Per Call of Duty HQ e Modern Warfare (2019), il promemoria chiede di scegliere **Controller** come dispositivo di mira nelle impostazioni del gioco e di mantenere i layout predefiniti per i comandi originali. La modalità rimane compatibilità Xbox standard; il promemoria non verifica funzioni DualSense native e non modifica preferenze del gioco.
+
+Quando un errore del motore si risolve, dalla 0.7.4 il relativo avviso viene tolto senza cancellare un messaggio successivo dell'app. Chiudere manualmente l'avviso nasconde quell'episodio; se l'errore si risolve e ricompare, viene segnalato di nuovo.
 
 ### Preparazione prima di Gioca
 

@@ -4,6 +4,20 @@
 
 Baseline hardware iniziale: OpenPad 0.4.2, 24 ottobre 2026. Le verifiche successive sono separate per versione. Questo è il riepilogo pubblico delle prove, non una certificazione per qualsiasi pad, gioco o PC. I report originali restano locali perché possono contenere percorsi, identificativi dei dispositivi e dati della macchina.
 
+## Diagnosi Call of Duty e stato attuale — 26 ottobre 2026
+
+L'utente segnala movimento del personaggio con il pad e visuale ferma in Modern Warfare. La verifica separa il percorso dei comandi dalla scelta di mira del titolo; non dichiara risolta la partita senza il riscontro dell'utente.
+
+- Con DualSense USB e compatibilità Xbox automatica, una lettura Windows indipendente dello slot XInput 0 ha raccolto 252 campioni in otto secondi e 229 cambi del contatore dei pacchetti. Sono stati osservati movimenti di entrambi gli stick, con valori massimi riportati di 32.767 a sinistra e 32.512 a destra. Lo stick destro arriva quindi all'endpoint XInput; la prova non dimostra da sola che il gioco lo usi per la mira.
+- Il file locale recente di Call of Duty riportava inizialmente `EnableGamepad=false`, con il proprio commento che distingue Mouse da Gamepad. In una lettura successiva il valore era `true`. Nessun file del gioco è stato modificato dalla diagnosi; non attribuiamo a OpenPad questo cambiamento e la risposta della visuale resta da confermare.
+- Il giornale di isolamento della sessione successiva indicava un controller posseduto da OpenPad, isolamento attivo e app autorizzata. Questi stati non sostituiscono la prova dei comandi nel gioco.
+- Audit del parser e dei quattro percorsi virtuali: gli assi destri vengono inoltrati da ViGEm, Xbox USB/IP, DualShock 4 e DualSense virtuali. Le opzioni avanzate locali sono disabilitate, senza binding personalizzati. **52 test mirati** su parser, mapping e normalizzazione superati; non è stata identificata una perdita degli assi destri nel codice esaminato.
+- La 0.7.4 aggiunge due regole informative per Call of Duty HQ e Modern Warfare (2019), mantenendo la compatibilità standard. Le indicazioni sulla mira sono separate dalla verifica del supporto nativo e delle funzioni DualSense. Una correzione distinta rimuove dalla UI l'avviso del motore quando quell'errore si risolve, preservando gli altri messaggi.
+
+Suite completa eseguita per la 0.7.4: **507 test OpenPad, 768 backend e 66 Updates superati, 1.341 in totale**. I casi Linux restano esclusi su Windows; l'enumerazione hardware non è usata come prova del pad fisico mentre il gioco è attivo e HidHide lo nasconde. Le nuove regressioni coprono sette casi degli avvisi transitori e undici casi delle regole informative, dell'identità del titolo e della distinzione dal supporto nativo. Nessun gioco è stato chiuso e nessuna modalità del controller è stata cambiata per far passare i test.
+
+La verifica dello stato dopo il vero riavvio Windows del **25 ottobre** ha confermato USB/IP e HidHide operativi, configurazione completa e nessun riavvio di sistema o dell'installer pendente. Le richieste ancora presenti nei resoconti precedenti descrivono lo stato di quelle prove: non sono richieste attuali e non vengono riscritte come se fossero già state completate allora.
+
 ## Aggiornamento pubblico reale 0.7.2 → 0.7.3
 
 **Prova completata sul programma installato**, senza usare il pulsante di controllo manuale o quello di applicazione: il controllo automatico all'avvio ha letto il feed GitHub pubblico firmato, scaricato la 0.7.3 e dichiarato il pacchetto verificato e pronto. La normale X ha chiuso ordinatamente l'app; l'aggiornamento è stato applicato e il successivo avvio ha caricato `0.7.3+44a7ba1ee839e373d30ae399177beba52ef67eb4`.

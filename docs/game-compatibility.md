@@ -4,7 +4,7 @@ Powered By RagazzoInGamba - Marco Laudati
 
 Il pad si collega, OpenPad sceglie il percorso, il gioco decide i comandi e gli effetti. Per fare questa scelta usiamo un catalogo con fonti dei produttori, separando sempre USB, Bluetooth e controller virtuale. Non basta un bollino «supporto controller» per promettere aptica o grilletti adattivi.
 
-Il catalogo contiene **14 regole**, controllate il **24 ottobre 2026**. Dieci sono nuove rispetto alla prima versione del catalogo. Questa è una verifica della documentazione: non significa che abbiamo provato fisicamente tutti questi giochi, controller e collegamenti. Le prove locali sono riportate nella [verifica del progetto](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md).
+Il catalogo contiene **16 regole**: 14 schede sul supporto DualSense documentato, controllate il **24 ottobre 2026**, e due guide alle impostazioni di Call of Duty aggiunte il **26 ottobre 2026**. Le guide Call of Duty mantengono la compatibilità standard e non dichiarano funzioni DualSense native verificate. Questa è una verifica della documentazione: non significa che abbiamo provato fisicamente tutti questi giochi, controller e collegamenti. Le prove locali sono riportate nella [verifica del progetto](https://github.com/MarcoLaudati/OpenPad-Releases/blob/main/VERIFICATION.md).
 
 ## Cosa sceglie OpenPad
 
@@ -41,6 +41,14 @@ Per **Horizon Zero Dawn Remastered**, la [patch ufficiale 1.3](https://support.n
 
 La regola di **The Witcher 3** richiede anche la dicitura **Remastered** nel titolo installato, perché condivide l'ID Steam con un'edizione precedente. **Horizon Zero Dawn Complete Edition** originale ha un ID diverso e non eredita le funzioni di Remastered. Un gioco con ID Steam sconosciuto non prende le funzioni di un altro solo perché ha un nome simile. Fuori da Steam vengono riconosciuti soltanto i titoli esatti e gli alias presenti nel catalogo.
 
+## Call of Duty: il gioco sceglie il dispositivo di mira
+
+Le regole **Call of Duty HQ** (Steam App ID 1938090) e **Modern Warfare (2019)** (Steam App ID 2000950) forniscono un promemoria, mantenendo la compatibilità Xbox standard per DualSense. Non promuovono la presenza di una guida a prova del supporto nativo USB/Bluetooth.
+
+Per giocare dal pad controlla il dispositivo di input nelle impostazioni del titolo: nei titoli recenti è indicato come **Dispositivo di input per la mira**. La [guida ufficiale di Black Ops 6](https://www.callofduty.com/guides/blackops6/training/call-of-duty-guides-black-ops-6-multiplayer-training-controls) spiega che la scelta Controller/Mouse va fatta prima della partita; la [guida PC di Modern Warfare (2019)](https://blog.activision.com/call-of-duty/2019-10/Getting-Started-in-Modern-Warfare-Controls-and-Settings-PC) documenta la selezione del dispositivo nelle opzioni. Per i comandi originali mantieni i layout di tasti e stick predefiniti. I nomi e la posizione dei menu possono variare tra i titoli dentro HQ.
+
+OpenPad espone il promemoria nelle informazioni del gioco, senza modificare configurazioni o binding. La diagnosi locale ha confermato gli assi destri nell'endpoint XInput; l'esito della visuale in partita rimane una prova separata. Vedi [problemi e soluzioni](troubleshooting.md#in-call-of-duty-cammino-ma-la-visuale-non-si-muove).
+
 ## Steam Input e audio: le condizioni dipendono dal titolo
 
 OpenPad non disattiva Steam Input per tutti i giochi. Manteniamo le condizioni indicate da ciascun produttore:
@@ -62,7 +70,7 @@ Il riepilogo distingue le funzioni documentate dalle prove ancora necessarie. Pe
 
 ## Aggiornare il catalogo
 
-La fonte incorporata è [GameCompatibilityCatalog.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.3/OpenPad-0.7.3-source.zip). Lo schema resta alla versione 1: `DocumentedUsbFeatures` e `DocumentedBluetoothFeatures` sono opzionali e indipendenti. Le chiavi ammesse sono `HapticFeedback`, `AdaptiveTriggers`, `ControllerSpeaker` e `Vibration`. Una lista assente non promette singole funzioni avanzate; una lista presente richiede il supporto documentato dello stesso collegamento.
+La fonte incorporata è [GameCompatibilityCatalog.json](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-source.zip). Lo schema resta alla versione 1: `DocumentedUsbFeatures` e `DocumentedBluetoothFeatures` sono opzionali e indipendenti. Le chiavi ammesse sono `HapticFeedback`, `AdaptiveTriggers`, `ControllerSpeaker` e `Vibration`. Una lista assente non promette singole funzioni avanzate; una lista presente richiede il supporto documentato dello stesso collegamento.
 
 L'engine espone `GetGameCapabilitySummary(InstalledGame)` per la libreria senza un pad collegato e `GetCapabilitySummary(PadSnapshot, InstalledGame, PadMode)` per il riepilogo del percorso scelto. I metodi usano famiglia del pad, collegamento, identità del gioco e modalità. Non misurano effetti fisici e non modificano impostazioni.
 

@@ -24,7 +24,7 @@ Sì, nella finestra [Avanzate](advanced.md) dei DualSense gestiti. Le opzioni so
 
 La scelta automatica è attiva di default. OpenPad riconosce il titolo e sceglie una modalità per ciascun controller. Le eccezioni manuali restano disponibili in **Libreria → Compatibilità e opzioni** quando vuoi una scelta diversa per un gioco.
 
-Il catalogo della versione 0.5.0 contiene 14 regole con fonti dei produttori. Gli altri titoli usano la compatibilità standard disponibile: non devi aggiungere un profilo per iniziare. Vedi [giochi e funzioni documentate](game-compatibility.md).
+Il catalogo della versione 0.7.4 contiene 16 regole: 14 sul supporto DualSense documentato e due guide alle impostazioni di Call of Duty. Le ultime due mantengono la compatibilità standard, senza dichiarare effetti DualSense verificati. Gli altri titoli usano la compatibilità standard disponibile: non devi aggiungere un profilo per iniziare. Vedi [giochi e funzioni documentate](game-compatibility.md).
 
 ## Perché dopo Gioca vedo «Preparo il pad»?
 

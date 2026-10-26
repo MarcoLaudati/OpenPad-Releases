@@ -7,16 +7,18 @@ Qui si parte dai sorgenti e si arriva al pacchetto completo. Il progetto da avvi
 ## Requisiti
 
 - Windows x64 per preparare e verificare il pacchetto driver.
-- .NET SDK 10; `global.json` indica versione e politica di roll-forward del repository.
+- .NET SDK **10.0.402**, fissato in `global.json` senza roll-forward e senza versioni preliminari.
 - PowerShell, Git e accesso alle dipendenze NuGet e alle release ufficiali fissate.
 
 Il pacchetto per giocare include il runtime .NET. L'SDK serve solo a chi compila.
 
+La CI installa lo stesso SDK dal global.json e ne controlla la versione prima della build. La pubblicazione resta sul runtime 10.0.13 censito nel catalogo delle licenze; ogni aggiornamento del runtime richiede una nuova verifica delle dipendenze distribuite.
+
 ## Compilazione completa
 
+Scarica i [sorgenti corrispondenti alla 0.7.4](https://github.com/MarcoLaudati/OpenPad-Releases/releases/download/v0.7.4/OpenPad-0.7.4-source.zip) ed estraili in una cartella locale. Apri PowerShell nella cartella che contiene `OpenPad.slnx`, poi esegui:
+
 ```powershell
-git clone https://github.com/MarcoLaudati/OpenPad.git
-cd OpenPad
 ./scripts/build-openpad.ps1 -Test -Publish
 ./scripts/package-openpad.ps1 -IncludeBinary
 ./scripts/verify-distribution.ps1 -OutputPath ./artifacts/verification/distribution.json
@@ -55,7 +57,7 @@ Il repository di sviluppo resta privato. La distribuzione pubblica `MarcoLaudati
 
 `scripts/sign-update-feed.ps1` prepara il feed con RSA-PSS usando la chiave esterna al repository. Su questo PC il materiale privato è conservato in `%LOCALAPPDATA%\OpenPad-Signing`, con ACL limitate; non è una dipendenza richiesta per compilare l'app. Il progetto incorpora solo la chiave pubblica. Chi crea un fork deve impostare il proprio canale e la propria chiave, senza sostituire silenziosamente la chiave di una release già installata. La firma Authenticode dell'EXE richiede un certificato separato e rimane un lavoro aperto.
 
-Il salvataggio degli artifact di Actions è facoltativo: nell'esecuzione manuale si può attivare `save_artifacts` quando lo spazio dell'account è disponibile. I controlli sui push non dipendono da quella quota. I pacchetti distribuiti agli utenti sono negli allegati delle [release](https://github.com/MarcoLaudati/OpenPad/releases).
+Il salvataggio degli artifact di Actions è facoltativo: nell'esecuzione manuale si può attivare `save_artifacts` quando lo spazio dell'account è disponibile. I controlli sui push non dipendono da quella quota. I pacchetti distribuiti agli utenti sono negli allegati delle [release](https://github.com/MarcoLaudati/OpenPad-Releases/releases).
 
 ## Lavorare su un componente
 
